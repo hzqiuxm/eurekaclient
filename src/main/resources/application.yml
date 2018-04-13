@@ -1,8 +1,10 @@
 eureka:
   client:
-    serviceUrl:
+    service-url:
       #注册中心地址
+#      defaultZone: http://ha1:8761/eureka/,http://ha2:8771/eureka/
       defaultZone: http://localhost:8761/eureka/
+
   # 以IP地址方式注册，默认是hostname
   instance:
     ip-address: true
@@ -12,3 +14,4 @@ server:
 spring:
   application:
     name: service-hi
+
